@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clip Desk Publisher Legal</title>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&display=swap">
+<style>
+  /* Layout: one readable column, sticky two-item nav that jumps between the Terms and the Privacy Policy */
+  :root {
+    --bg: #fbf8fa; --fg: #1d1a1c; --muted: #6b6168; --line: #e9e1e6; --accent: #c8336b; --chip: #f4e6ec;
+    --display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+    --body: "Inter", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #151214; --fg: #efe8ec; --muted: #a99ea5; --line: #2c2529; --accent: #f06a9b; --chip: #2a1d23; color-scheme: dark; }
+  }
+  :root[data-theme="dark"] { --bg: #151214; --fg: #efe8ec; --muted: #a99ea5; --line: #2c2529; --accent: #f06a9b; --chip: #2a1d23; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.65 var(--body); }
+  body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+  .wrap { max-width: 44rem; margin: 0 auto; padding-block: 2.5rem 4rem;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  header { display: grid; gap: .5rem; margin-bottom: 1.5rem; }
+  .eyebrow { font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  h1, h2, h3 { font-family: var(--display); text-wrap: balance; line-height: 1.2; margin: 0; }
+  h1 { font-size: clamp(1.8rem, 5vw, 2.4rem); }
+  h2 { font-size: 1.5rem; padding-top: 1rem; }
+  h3 { font-size: 1.05rem; margin-top: 1.5rem; }
+  p, li { color: var(--fg); }
+  .meta { color: var(--muted); font-size: .9rem; }
+  nav { position: sticky; top: env(safe-area-inset-top, 0px); background: var(--bg); border-bottom: 1px solid var(--line);
+    display: flex; gap: .5rem; flex-wrap: wrap; padding-block: .6rem; margin-bottom: 1rem; z-index: 5; }
+  nav a { font-weight: 600; text-decoration: none; color: var(--accent); background: var(--chip); padding: .3rem .8rem; border-radius: 999px; }
+  nav a:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  section { scroll-margin-top: 4rem; }
+  section + section { border-top: 1px solid var(--line); margin-top: 2.5rem; padding-top: 1rem; }
+  ul { padding-left: 1.2rem; }
+  a { color: var(--accent); }
+  code { font-size: .9em; background: var(--chip); padding: .05rem .3rem; border-radius: 4px; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Clip Desk Publisher</span>
+    <h1>Terms of Service and Privacy Policy</h1>
+    <p class="meta">Last updated: 19 November 2026</p>
+    <p>Clip Desk Publisher is a small private tool that the operator of the GTA6 Crazy Clips pages (@gta6.crazy.clips) runs on their own computer. It edits short gaming clips and uploads them to that operator's own TikTok and Instagram accounts through the platforms' official APIs. It is not offered to the public and has no other users.</p>
+  </header>
+
+  <nav aria-label="Sections"><a href="#terms">Terms of Service</a><a href="#privacy">Privacy Policy</a></nav>
+
+  <section id="terms">
+    <h2>Terms of Service</h2>
+
+    <h3>1. What the tool does</h3>
+    <p>The tool turns longer gaming videos into short vertical clips, adds captions, and uploads the finished clips to accounts that the operator owns and has connected. It only posts after the operator has authorized it through TikTok Login Kit or Instagram/Facebook Login.</p>
+
+    <h3>2. Who may use it</h3>
+    <p>Only the operator of GTA6 Crazy Clips. Nobody else can sign in to the tool, and it does not act on any account other than the operator's own.</p>
+
+    <h3>3. Content rules</h3>
+    <ul>
+      <li>Every clip credits the original creator in the post caption.</li>
+      <li>Clips are only made from creators who run a public clipping campaign or have given permission.</li>
+      <li>The tool does not post leaks, pirated material, cheats that break game rules, or misleading claims, and it never presents the page as an official channel of any game studio.</li>
+      <li>All posts follow the TikTok Community Guidelines and the Instagram Community Guidelines.</li>
+    </ul>
+
+    <h3>4. Platform terms</h3>
+    <p>Use of TikTok and Instagram through this tool remains subject to the TikTok Terms of Service and the Meta Terms. If a platform changes or limits its API, the tool may stop working without notice.</p>
+
+    <h3>5. No warranty</h3>
+    <p>The tool is provided as is, without warranty of any kind. The operator is responsible for what is posted on their own accounts.</p>
+
+    <h3>6. Rights holders</h3>
+    <p>If you are a creator or rights holder and want a clip removed, send a message to @gta6.crazy.clips on TikTok or Instagram. Clips are removed as soon as the request is confirmed.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+
+    <h3>1. Data the tool receives</h3>
+    <p>When the operator connects their own accounts, the platforms give the tool:</p>
+    <ul>
+      <li><strong>TikTok:</strong> an access token and refresh token, the account's <code>open_id</code>, basic profile information (<code>user.info.basic</code>), the list of privacy options allowed for posting, and the status of each upload.</li>
+      <li><strong>Instagram:</strong> an access token, the Instagram account ID and username, and the status and link of each published Reel.</li>
+    </ul>
+    <p>The tool does not read followers, messages, comments, contacts or data about any other person.</p>
+
+    <h3>2. How the data is used</h3>
+    <p>Only to upload the operator's clips to the operator's own accounts and to check whether each upload finished. The data is never sold, shared with third parties, or used for advertising.</p>
+
+    <h3>3. Where the data is stored</h3>
+    <p>Tokens and upload records are kept in local files on the operator's computer. Nothing is stored on a server run by the tool.</p>
+
+    <h3>4. Retention and deletion</h3>
+    <p>Tokens are kept until the operator disconnects the account. Access can be revoked at any time in TikTok under Settings and privacy, Security, Manage app permissions, and in Instagram under Settings, Website permissions, Apps and websites. Deleting the local token file removes all stored data.</p>
+
+    <h3>5. Children</h3>
+    <p>The tool is not directed at anyone under 18 and does not collect data from children.</p>
+
+    <h3>6. Changes and contact</h3>
+    <p>Any change to this policy is published on this page with a new date. Questions can be sent as a message to @gta6.crazy.clips on TikTok or Instagram.</p>
+  </section>
+</div>
+
+</body>
+</html>
